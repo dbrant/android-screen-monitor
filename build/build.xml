@@ -2,7 +2,7 @@
 <project basedir=".." default="jar">
     <path id="classpath">
         <pathelement location="libs/chimpchat-22.2.0.jar"/>
-        <pathelement location="libs/ddmlib-22.2.0.jar"/>
+        <pathelement location="libs/ddmlib-26.0.0-dev.jar"/>
         <pathelement location="libs/guava-13.0.1.jar"/>
     </path>
 
@@ -21,7 +21,7 @@
     <target name="jar" depends="compile">
         <jar destfile="asm.jar" basedir="classes">
             <zipgroupfileset dir="libs" includes="chimpchat-22.2.0.jar"/>
-            <zipgroupfileset dir="libs" includes="ddmlib-22.2.0.jar"/>
+            <zipgroupfileset dir="libs" includes="ddmlib-26.0.0-dev.jar"/>
             <zipgroupfileset dir="libs" includes="guava-13.0.1.jar"/>
             <fileset dir="src" includes="com/adakoda/android/asm/*.png" />
             <manifest>
